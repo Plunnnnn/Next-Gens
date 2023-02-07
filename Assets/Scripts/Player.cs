@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
     private float dashingPower = 24f;
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
-    
+    private float originalScale;
 
 
     // Start is called before the first frame update
@@ -68,17 +68,8 @@ public class Player : MonoBehaviour
 
     }
 
-    private void Flip()
-    {
-        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
-        {
-            Vector3 localScale = transform.localScale;
-            isFacingRight = !isFacingRight;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
-        }
-    }
     
+
     private void Update()
     {
         if (isDashing)
@@ -87,7 +78,9 @@ public class Player : MonoBehaviour
         }
 
 
-        Flip();
+        horizontal = Input.GetAxisRaw("Horizontal");
+
+       
 
         if (canDash && Input.GetKey(KeyCode.LeftShift) && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
         {
@@ -99,9 +92,12 @@ public class Player : MonoBehaviour
 
         }
 
+
+        Flip();
+
+
+
     }
-
-
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -110,10 +106,12 @@ public class Player : MonoBehaviour
             return;
         }
 
-        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, rb.velocity.y);
+        rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
 
         
 
+
+        
 
 
 
@@ -157,8 +155,17 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(dashingCooldown); // cooldown
         canDash = true;
     }
-    
 
+    private void Flip()
+    {
+        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
+        {
+            Vector3 localScale = transform.localScale;
+            isFacingRight = !isFacingRight;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
+        }
+    }
 
 }
 

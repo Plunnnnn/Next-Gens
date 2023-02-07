@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Sword : MonoBehaviour
 {
+    
+    
     // Start is called before the first frame update
-
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -28,5 +30,13 @@ public class Sword : MonoBehaviour
     void Update()
     {
         
+        if (Input.GetKey(KeyCode.F))
+        {
+            transform.eulerAngles = Vector3.forward * 45;
+        }
+    
     }
+
+
+    
 }
