@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     [SerializeField] float jumpSpeed = 3;
     [SerializeField] private TrailRenderer tr;
     [SerializeField] public int points;
+    
+
 
     private Rigidbody2D rb;
     private BoxCollider2D jumpControler;

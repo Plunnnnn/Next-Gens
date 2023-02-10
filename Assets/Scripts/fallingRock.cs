@@ -10,7 +10,7 @@ public class fallingRock : MonoBehaviour
     private Rigidbody2D detectionCollider;
     private bool isUp;
     [SerializeField]private Collider2D detecteur;
-    private float hArret;
+ 
 
     private float Y;
 
@@ -36,7 +36,7 @@ public class fallingRock : MonoBehaviour
 
          
         Y = rock.transform.position.y;
-        hArret = Y + 7;
+
 
 
     }
@@ -57,7 +57,7 @@ public class fallingRock : MonoBehaviour
 
            
             
-            while ( Y < hArret )
+            while ( Y < -10.94 )
             {
 
                 transform.Translate(Vector2.up * Time.deltaTime);
