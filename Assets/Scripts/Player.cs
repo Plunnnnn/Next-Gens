@@ -12,7 +12,8 @@ public class Player : MonoBehaviour
     [SerializeField] float jumpSpeed = 3;
     [SerializeField] private TrailRenderer tr;
     [SerializeField] public int points;
-    
+
+    public Animator animator;
 
 
     private Rigidbody2D rb;
@@ -44,7 +45,7 @@ public class Player : MonoBehaviour
 
         isJumping = true;
 
-        
+
     }
 
 
@@ -56,7 +57,7 @@ public class Player : MonoBehaviour
         {
             isJumping = false;
         }
-        
+
 
     }
 
@@ -70,7 +71,7 @@ public class Player : MonoBehaviour
 
     }
 
-    
+
 
     private void Update()
     {
@@ -82,7 +83,7 @@ public class Player : MonoBehaviour
 
         horizontal = Input.GetAxisRaw("Horizontal");
 
-       
+
 
         if (canDash && Input.GetKey(KeyCode.LeftShift) && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
         {
@@ -91,10 +92,12 @@ public class Player : MonoBehaviour
 
             StartCoroutine(Dash());
 
+            animator.SetTrigger("Dash");
+
 
         }
 
-
+        animator.SetFloat("Speed", Mathf.Abs(horizontal));
         Flip();
 
 
@@ -110,10 +113,10 @@ public class Player : MonoBehaviour
 
         rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
 
-        
 
 
-        
+
+
 
 
 
@@ -169,7 +172,10 @@ public class Player : MonoBehaviour
         }
     }
 
+   
+    
 }
+
 
 
 

@@ -9,6 +9,7 @@ TagManager:
   - mort
   - Mob
   - Sword
+  - checkpoint
   layers:
   - Default
   - TransparentFX
