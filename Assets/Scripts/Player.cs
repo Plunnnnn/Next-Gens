@@ -1,21 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using Unity.VisualScripting;
 using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEditor.Timeline;
 using UnityEngine;
-
+using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
+    public Death death;
+
+
     [SerializeField] float moveSpeed = 10;
     [SerializeField] float jumpSpeed = 3;
     [SerializeField] private TrailRenderer tr;
     [SerializeField] public int points;
 
     public Animator animator;
-
-
+    public Transform range;
+    public float attackrange = 0.5f;
+    public LayerMask enemyLayer;
+    public int Degats = 50;
+    
     private Rigidbody2D rb;
     private BoxCollider2D jumpControler;
     private float horizontal;
@@ -32,6 +39,8 @@ public class Player : MonoBehaviour
     private float dashingCooldown = 1f;
     private float originalScale;
 
+    public int HPjoueur = 200;
+    
 
     // Start is called before the first frame update
 
@@ -44,8 +53,6 @@ public class Player : MonoBehaviour
         jumpControler = GetComponent<BoxCollider2D>();
 
         isJumping = true;
-
-
     }
 
 
@@ -58,7 +65,10 @@ public class Player : MonoBehaviour
             isJumping = false;
         }
 
-
+        if (collision.gameObject.tag == "Mob")
+        {
+            HPjoueur -= 20;
+        }
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -71,7 +81,7 @@ public class Player : MonoBehaviour
 
     }
 
-
+    
 
     private void Update()
     {
@@ -80,6 +90,12 @@ public class Player : MonoBehaviour
             return;
         }
 
+        if (HPjoueur <= 0) 
+        
+        {
+            HPjoueur = 200;
+            transform.position= Vector3.zero;
+        }
 
         horizontal = Input.GetAxisRaw("Horizontal");
 
@@ -100,7 +116,10 @@ public class Player : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
         Flip();
 
-
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Attack();
+        }
 
     }
     // Update is called once per frame
@@ -172,8 +191,25 @@ public class Player : MonoBehaviour
         }
     }
 
-   
-    
+
+    void Attack()
+    {
+        animator.SetTrigger("Attaque");
+
+        Collider2D[] hitEnnemie = Physics2D.OverlapCircleAll(range.position, attackrange, enemyLayer);
+        foreach(Collider2D ennemy in hitEnnemie) 
+        {
+            ennemy.GetComponent<mob>().touche(Degats);
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (range == null)
+            return;
+
+        Gizmos.DrawWireSphere(range.position, attackrange);   
+    }
 }
 
 

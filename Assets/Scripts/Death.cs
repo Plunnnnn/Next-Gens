@@ -6,17 +6,7 @@ using UnityEngine.UIElements;
 
 public class Death : MonoBehaviour
 {
-    //public int respawn;
-
-    //private void ontriggerenter2d(collider2d other)
-    //{
-    //    if (other.comparetag("player"))
-    //    {
-    //        scenemanager.loadscene(respawn);      
-    //    }
-    //}
-
-    // The spawn point for the character
+    public Player player;
     public Transform spawnPoint;
     public Transform[] waypoints;
     private Transform TP;
@@ -28,15 +18,19 @@ public class Death : MonoBehaviour
         if (collision.CompareTag("mort"))
         {
             // Move the character back to its spawn point
-            transform.position = spawnPoint.position;
-            lastPosition = transform.position;
+            respawn();
             Debug.Log("Collision detected at position: " + lastPosition);
         }
 
         
     }
 
-
+    public void respawn()
+    {
+        transform.position = spawnPoint.position;
+        lastPosition = transform.position;
+        
+    }
 
     
 

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,19 +10,13 @@ public class mob : MonoBehaviour
 
     
     public Transform[] waypoints;
-   
+    
+    public int maxHP = 100;
+    int HP;
     
 
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Sword")
-        {
-            Destroy(gameObject);
-        }
-
-
-    }
+   
 
     public Transform[] points;
     public int current;
@@ -29,6 +24,8 @@ public class mob : MonoBehaviour
     void Start()
     {
         current = 0;
+        HP = maxHP;
+        
     }
 
 
@@ -43,6 +40,22 @@ public class mob : MonoBehaviour
             current = (current + 1) % 2;
         }
     }
+    public void touche(int degats)
+    {
+        HP -= degats;
+    
+        if (HP <= 0 )
+        {
+            
+            Destroy(gameObject);
+        }
+    
+    
+    }
+
+    
+
+
 }
 
 
