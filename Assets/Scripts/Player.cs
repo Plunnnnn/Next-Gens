@@ -5,12 +5,16 @@ using Unity.VisualScripting;
 using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEditor.Timeline;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
+
 
 public class Player : MonoBehaviour
 {
     public Death death;
 
+
+    public Image BarreDeVie;
+    public float HpRestant = 100f;
 
     [SerializeField] float moveSpeed = 10;
     [SerializeField] float jumpSpeed = 3;
@@ -28,7 +32,7 @@ public class Player : MonoBehaviour
     private float horizontal;
     private bool isJumping;
     private int jumpCount;
-    private bool isFacingRight = true;
+    public bool isFacingRight = true;
 
 
 
@@ -39,8 +43,18 @@ public class Player : MonoBehaviour
     private float dashingCooldown = 1f;
     private float originalScale;
 
-    public int HPjoueur = 200;
+    public int HPjoueur = 100;
+
+
+
+
+    public float KBForce = 1.0f;
+
+    public float KB;
+    public float KBTemps;
+
     
+
 
     // Start is called before the first frame update
 
@@ -68,6 +82,11 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Mob")
         {
             HPjoueur -= 20;
+            Debug.Log(HPjoueur/100f);
+            Debug.Log(HPjoueur);
+            BarreDeVie.fillAmount = HPjoueur/100f;
+            KB = 0.2f;
+            
         }
     }
 
@@ -93,8 +112,8 @@ public class Player : MonoBehaviour
         if (HPjoueur <= 0) 
         
         {
-            HPjoueur = 200;
-            transform.position= Vector3.zero;
+            HPjoueur = 100;
+            rb.GetComponent<Death>().respawn();
         }
 
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -130,7 +149,22 @@ public class Player : MonoBehaviour
             return;
         }
 
-        rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
+        if(KB <= 0) 
+        {
+            rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
+        }
+        else 
+        {
+            if(isFacingRight == true)
+            {
+                rb.velocity = new Vector2(-KBForce, 1/2*KBForce);
+            }
+            if (isFacingRight == false)
+            {
+                rb.velocity = new Vector2(KBForce, 1 / 2 *  KBForce);
+            }
+            KB -= Time.deltaTime;
+        }
 
 
 
@@ -200,6 +234,7 @@ public class Player : MonoBehaviour
         foreach(Collider2D ennemy in hitEnnemie) 
         {
             ennemy.GetComponent<mob>().touche(Degats);
+            
         }
     }
 

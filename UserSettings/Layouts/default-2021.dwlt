@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
-    y: 43
-    width: 2560
-    height: 1357
+    x: 8
+    y: 51
+    width: 2544
+    height: 1341
   m_ShowMode: 4
   m_Title: Game
   m_RootView: {fileID: 6}
@@ -43,12 +43,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 2560
-    height: 1307
+    width: 2544
+    height: 1291
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 17
+  controlID: 49
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -59,24 +59,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Window
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1893
+    x: 1881
     y: 0
-    width: 667
-    height: 1307
-  m_MinSize: {x: 101, y: 121}
+    width: 663
+    height: 1291
+  m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 13}
   - {fileID: 12}
-  m_Selected: 2
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 2
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 383
-    height: 865
+    width: 381
+    height: 854
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
@@ -113,24 +113,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 865
-    width: 1893
-    height: 442
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 21}
+    y: 854
+    width: 1881
+    height: 437
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
   - {fileID: 21}
   - {fileID: 16}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -151,8 +151,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2560
-    height: 1357
+    width: 2544
+    height: 1341
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -176,7 +176,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2560
+    width: 2544
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -197,8 +197,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1337
-    width: 2560
+    y: 1321
+    width: 2544
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -221,12 +221,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1893
-    height: 1307
+    width: 1881
+    height: 1291
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 85
+  controlID: 50
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -246,12 +246,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1893
-    height: 865
+    width: 1881
+    height: 854
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 86
+  controlID: 51
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -267,10 +267,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 383
+    x: 381
     y: 0
-    width: 1510
-    height: 865
+    width: 1500
+    height: 854
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 20}
@@ -300,15 +300,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1893
-    y: 73
-    width: 666
-    height: 1286
+    x: 1889
+    y: 81
+    width: 662
+    height: 1270
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
-  progressMessageClearTime: 32652.3084729
+  progressMessageClearTime: -1
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
@@ -458,6 +458,177 @@ MonoBehaviour:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
+    - commitID: e5c1d57929a62e49b4f29eed4ff05171f7242285
+      mergeA: 
+      mergeB: 
+      authorName: Plunnnnn
+      authorEmail: 118853637+Plunnnnn@users.noreply.github.com
+      commitEmail: 118853637+Plunnnnn@users.noreply.github.com
+      commitName: Plunnnnn
+      summary: animation + map + hp + mort
+      description: titre
+      timeString: 2023-04-05T20:57:52.000+02:00
+      commitTimeString: 2023-04-05T20:57:52.000+02:00
+      changes:
+      - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\Attack.anim
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\Attack.anim
+        projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\Attack.anim
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\Attack.anim.meta
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\Attack.anim.meta
+        projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\Attack.anim.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack.png.meta
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack.png.meta
+        projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack.png.meta
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack2.png.meta
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack2.png.meta
+        projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack2.png.meta
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack2NoMovement.png.meta
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack2NoMovement.png.meta
+        projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack2NoMovement.png.meta
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Roll.png.meta
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Roll.png.meta
+        projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Roll.png.meta
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\test.anim
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\test.anim
+        projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\test.anim
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\test.anim.meta
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\test.anim.meta
+        projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\test.anim.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Cainos\Colour2\NoOutline\120x80_PNGSheets\dash.anim
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour2\NoOutline\120x80_PNGSheets\dash.anim
+        projectPath: Assets\Cainos\Colour2\NoOutline\120x80_PNGSheets\dash.anim
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Cainos\Pixel Art Platformer - Village Props\Tileset Palette\TP
+          Ground.prefab
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Pixel Art
+          Platformer - Village Props\Tileset Palette\TP Ground.prefab
+        projectPath: Assets\Cainos\Pixel Art Platformer - Village Props\Tileset Palette\TP
+          Ground.prefab
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Cainos\Player.controller
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Player.controller
+        projectPath: Assets\Cainos\Player.controller
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\22.unity
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scenes\22.unity
+        projectPath: Assets\Scenes\22.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scenes\Map.unity
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scenes\Map.unity
+        projectPath: Assets\Scenes\Map.unity
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scenes\Map.unity.meta
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scenes\Map.unity.meta
+        projectPath: Assets\Scenes\Map.unity.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\Death.cs
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scripts\Death.cs
+        projectPath: Assets\Scripts\Death.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\Ennemies.controller
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scripts\Ennemies.controller
+        projectPath: Assets\Scripts\Ennemies.controller
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\Ennemies.controller.meta
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scripts\Ennemies.controller.meta
+        projectPath: Assets\Scripts\Ennemies.controller.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\New Animation.anim
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scripts\New Animation.anim
+        projectPath: Assets\Scripts\New Animation.anim
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\New Animation.anim.meta
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scripts\New Animation.anim.meta
+        projectPath: Assets\Scripts\New Animation.anim.meta
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\Scripts\Player.cs
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scripts\Player.cs
+        projectPath: Assets\Scripts\Player.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Scripts\mob.cs
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scripts\mob.cs
+        projectPath: Assets\Scripts\mob.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Logs\AssetImportWorker0-prev.log
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Logs\AssetImportWorker0-prev.log
+        projectPath: Logs\AssetImportWorker0-prev.log
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Logs\AssetImportWorker1-prev.log
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Logs\AssetImportWorker1-prev.log
+        projectPath: Logs\AssetImportWorker1-prev.log
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: Logs\AssetImportWorker2-prev.log
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Logs\AssetImportWorker2-prev.log
+        projectPath: Logs\AssetImportWorker2-prev.log
+        originalPath: 
+        indexStatus: 5
+        workTreeStatus: 0
+      - path: ProjectSettings\TagManager.asset
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\ProjectSettings\TagManager.asset
+        projectPath: ProjectSettings\TagManager.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\default-2021.dwlt
+        fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\UserSettings\Layouts\default-2021.dwlt
+        projectPath: UserSettings\Layouts\default-2021.dwlt
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
     - commitID: e5f5997f2b4d864210474b322f2e07ac4e8d5116
       mergeA: 
       mergeB: 
@@ -12469,14 +12640,187 @@ MonoBehaviour:
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2023-04-05T20:57:16.494+02:00
+      updatedTimeString: 2023-04-09T20:08:01.774+02:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2023-04-09T20:08:01.933+02:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
+      - commitID: e5c1d57929a62e49b4f29eed4ff05171f7242285
+        mergeA: 
+        mergeB: 
+        authorName: Plunnnnn
+        authorEmail: 118853637+Plunnnnn@users.noreply.github.com
+        commitEmail: 118853637+Plunnnnn@users.noreply.github.com
+        commitName: Plunnnnn
+        summary: animation + map + hp + mort
+        description: titre
+        timeString: 2023-04-05T20:57:52.000+02:00
+        commitTimeString: 2023-04-05T20:57:52.000+02:00
+        changes:
+        - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\Attack.anim
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\Attack.anim
+          projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\Attack.anim
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\Attack.anim.meta
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\Attack.anim.meta
+          projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\Attack.anim.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack.png.meta
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack.png.meta
+          projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack.png.meta
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack2.png.meta
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack2.png.meta
+          projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack2.png.meta
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack2NoMovement.png.meta
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack2NoMovement.png.meta
+          projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Attack2NoMovement.png.meta
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Roll.png.meta
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Roll.png.meta
+          projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\_Roll.png.meta
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\test.anim
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\test.anim
+          projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\test.anim
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\test.anim.meta
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\test.anim.meta
+          projectPath: Assets\Cainos\Colour1\NoOutline\120x80_PNGSheets\test.anim.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Cainos\Colour2\NoOutline\120x80_PNGSheets\dash.anim
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Colour2\NoOutline\120x80_PNGSheets\dash.anim
+          projectPath: Assets\Cainos\Colour2\NoOutline\120x80_PNGSheets\dash.anim
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Cainos\Pixel Art Platformer - Village Props\Tileset Palette\TP
+            Ground.prefab
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Pixel
+            Art Platformer - Village Props\Tileset Palette\TP Ground.prefab
+          projectPath: Assets\Cainos\Pixel Art Platformer - Village Props\Tileset
+            Palette\TP Ground.prefab
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Cainos\Player.controller
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Cainos\Player.controller
+          projectPath: Assets\Cainos\Player.controller
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\22.unity
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scenes\22.unity
+          projectPath: Assets\Scenes\22.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scenes\Map.unity
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scenes\Map.unity
+          projectPath: Assets\Scenes\Map.unity
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scenes\Map.unity.meta
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scenes\Map.unity.meta
+          projectPath: Assets\Scenes\Map.unity.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\Death.cs
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scripts\Death.cs
+          projectPath: Assets\Scripts\Death.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\Ennemies.controller
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scripts\Ennemies.controller
+          projectPath: Assets\Scripts\Ennemies.controller
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\Ennemies.controller.meta
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scripts\Ennemies.controller.meta
+          projectPath: Assets\Scripts\Ennemies.controller.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\New Animation.anim
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scripts\New
+            Animation.anim
+          projectPath: Assets\Scripts\New Animation.anim
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\New Animation.anim.meta
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scripts\New
+            Animation.anim.meta
+          projectPath: Assets\Scripts\New Animation.anim.meta
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: Assets\Scripts\Player.cs
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scripts\Player.cs
+          projectPath: Assets\Scripts\Player.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Scripts\mob.cs
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Assets\Scripts\mob.cs
+          projectPath: Assets\Scripts\mob.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Logs\AssetImportWorker0-prev.log
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Logs\AssetImportWorker0-prev.log
+          projectPath: Logs\AssetImportWorker0-prev.log
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Logs\AssetImportWorker1-prev.log
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Logs\AssetImportWorker1-prev.log
+          projectPath: Logs\AssetImportWorker1-prev.log
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: Logs\AssetImportWorker2-prev.log
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\Logs\AssetImportWorker2-prev.log
+          projectPath: Logs\AssetImportWorker2-prev.log
+          originalPath: 
+          indexStatus: 5
+          workTreeStatus: 0
+        - path: ProjectSettings\TagManager.asset
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\ProjectSettings\TagManager.asset
+          projectPath: ProjectSettings\TagManager.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\default-2021.dwlt
+          fullPath: C:\Users\33753\Documents\GitHub\Next-Gens\UserSettings\Layouts\default-2021.dwlt
+          projectPath: UserSettings\Layouts\default-2021.dwlt
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
       - commitID: e5f5997f2b4d864210474b322f2e07ac4e8d5116
         mergeA: 
         mergeB: 
@@ -24637,7 +24981,7 @@ MonoBehaviour:
   currentRemoteUrl: https://github.com/Plunnnnn/Next-Gens.git
   statusAhead: 0
   statusBehind: 0
-  hasItemsToCommit: 0
+  hasItemsToCommit: 1
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: main
@@ -24648,14 +24992,14 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 
-    cacheType: 0
+    updatedTimeString: 2023-04-09T18:46:53.903+02:00
+    cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 0001-01-01T00:00:00.000+00:00
+    updatedTimeString: 2023-04-09T18:46:55.300+02:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 
-    cacheType: 0
+    updatedTimeString: 2023-04-09T18:46:55.278+02:00
+    cacheType: 6
   pullButtonContent:
     m_Text: Pull
     m_Image: {fileID: 0}
@@ -24672,10 +25016,10 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 0.5
-  repositoryProgressMessage: Reading locks...
-  appManagerProgressValue: 0
-  appManagerProgressMessage: 
+  repositoryProgressValue: 0
+  repositoryProgressMessage: 
+  appManagerProgressValue: 1
+  appManagerProgressMessage: Initialized
   connections: []
   primaryConnectionUsername: 
 --- !u!114 &13
@@ -24698,17 +25042,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1802
+    x: 1889
     y: 81
-    width: 756
-    height: 1277
+    width: 662
+    height: 1270
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 38666
+  m_LastSelectedObjectID: -1242
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -24810,10 +25154,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 383
-    y: 73
-    width: 1508
-    height: 844
+    x: 389
+    y: 81
+    width: 1498
+    height: 833
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -24824,7 +25168,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1508, y: 823}
+  m_TargetSize: {x: 1498, y: 812}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -24839,10 +25183,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -754
-    m_HBaseRangeMax: 754
-    m_VBaseRangeMin: -411.5
-    m_VBaseRangeMax: 411.5
+    m_HBaseRangeMin: -749
+    m_HBaseRangeMax: 749
+    m_VBaseRangeMin: -406
+    m_VBaseRangeMax: 406
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -24860,23 +25204,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1508
-      height: 823
+      width: 1498
+      height: 812
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 754, y: 411.5}
+    m_Translation: {x: 749, y: 406}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -754
-      y: -411.5
-      width: 1508
-      height: 823
+      x: -749
+      y: -406
+      width: 1498
+      height: 812
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1508, y: 844}
+  m_LastWindowPixelSize: {x: 1498, y: 833}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -24931,10 +25275,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 938
-    width: 1892
-    height: 421
+    x: 8
+    y: 935
+    width: 1880
+    height: 416
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -24965,9 +25309,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 130}
-    m_SelectedIDs: f8620000
-    m_LastClickedID: 25336
-    m_ExpandedIDs: 00000000e2620000e4620000ea620000ec620000ee620000ba650000fa77000010790000867b0000f282000000ca9a3bffffff7f
+    m_SelectedIDs: 30660000
+    m_LastClickedID: 26160
+    m_ExpandedIDs: 00000000d0650000d265000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -24995,7 +25339,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e2620000e4620000
+    m_ExpandedIDs: 00000000d0650000d2650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -25020,8 +25364,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 06230000
-    m_LastClickedInstanceID: 8966
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300003e6000004c80000052860000b68700009461000096620000f06b0000a26700003a690000
     m_RenameOverlay:
@@ -25071,10 +25415,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1893
-    y: 73
-    width: 666
-    height: 1286
+    x: 1889
+    y: 81
+    width: 662
+    height: 1270
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -25112,10 +25456,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 73
-    width: 382
-    height: 844
+    x: 8
+    y: 81
+    width: 380
+    height: 833
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -25123,23 +25467,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 88d7ffff1cdbffff2afbffffde9600000a970000
+      m_SelectedIDs: 2afbffff
+      m_LastClickedID: -1238
+      m_ExpandedIDs: 26fbffff28fbffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Main Camera
+        m_OriginalName: Main Camera
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 24754
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -25169,10 +25513,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 383
-    y: 73
-    width: 1508
-    height: 844
+    x: 389
+    y: 81
+    width: 1498
+    height: 833
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -25429,9 +25773,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.1762, y: -8.042354, z: -0.06373914}
+    m_Target: {x: 0.77454364, y: 1.2651249, z: -0.10630938}
     speed: 2
-    m_Value: {x: 4.1762, y: -8.042354, z: -0.06373914}
+    m_Value: {x: 0.18483889, y: 0.95533067, z: -0.09827064}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -25482,9 +25826,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 14.410672
+    m_Target: 18.66769
     speed: 2
-    m_Value: 14.410672
+    m_Value: 17.86382
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -25529,10 +25873,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 884
-    width: 1892
-    height: 421
+    x: 8
+    y: 935
+    width: 1880
+    height: 416
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
