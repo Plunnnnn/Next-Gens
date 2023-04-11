@@ -15,11 +15,11 @@ public class Score1 : MonoBehaviour
     { instance = this; }
 
     void Start()
-    { coinText.text = "COINS :" + currentCoins.ToString(); }
+    { coinText.text = "x " + currentCoins.ToString(); }
 
     public void IncreaseCoins()
     { 
         currentCoins += 1;
-        coinText.text = "Coins : " + currentCoins.ToString();
+        coinText.text = "x " + currentCoins.ToString();
     }
 }
