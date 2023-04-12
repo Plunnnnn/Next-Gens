@@ -112,6 +112,7 @@ public class Player : MonoBehaviour
         if (HPjoueur <= 0) 
         
         {
+            BarreDeVie.fillAmount = 1f;
             HPjoueur = 100;
             rb.GetComponent<Death>().respawn();
         }
