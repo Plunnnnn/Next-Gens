@@ -1,9 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using System.Text;
-using Unity.VisualScripting;
-using Unity.VisualScripting.Dependencies.NCalc;
-using UnityEditor.Timeline;
+
 using UnityEngine;
 using UnityEngine.UI;
 
