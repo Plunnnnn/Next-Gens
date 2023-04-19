@@ -55,6 +55,10 @@ public class mob : MonoBehaviour
         else
         {
             current = (current + 1) % 2;
+            Vector3 localScale = transform.localScale;
+            
+            localScale.x *= -1f;
+            transform.localScale = localScale;
         }
 
         Physics2D.OverlapCapsuleAll(range.position, taille, direction, 1.0f);

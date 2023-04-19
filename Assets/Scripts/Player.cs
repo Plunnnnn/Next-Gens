@@ -117,7 +117,7 @@ public class Player : MonoBehaviour
 
 
 
-        if (canDash && Input.GetKey(KeyCode.LeftShift) && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
+        if (canDash && Input.GetKey(KeyCode.LeftShift) && (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.D)))
         {
             Debug.Log("shift");
 
