@@ -11,7 +11,7 @@ using TMPro;
 public class mob : MonoBehaviour
 {
 
-    Quest quest;
+    public Quest quest;
 
     public Transform[] waypoints;
     
