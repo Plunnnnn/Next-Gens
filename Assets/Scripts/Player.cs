@@ -1,13 +1,14 @@
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 
 public class Player : MonoBehaviour
 {
     public Death death;
-
+    public Quest quest;
 
     public Image BarreDeVie;
     public float HpRestant = 100f;
@@ -49,8 +50,9 @@ public class Player : MonoBehaviour
     public float KB;
     public float KBTemps;
 
+    public int quetecompte = 0;
     
-
+    
 
     // Start is called before the first frame update
 
@@ -63,6 +65,9 @@ public class Player : MonoBehaviour
         jumpControler = GetComponent<BoxCollider2D>();
 
         isJumping = true;
+
+        
+        
     }
 
 
@@ -84,6 +89,12 @@ public class Player : MonoBehaviour
             KB = 0.2f;
             
         }
+        if (collision.gameObject.tag == "pnj")
+        {
+            
+            quest.quete1 = true;
+        }
+
     }
 
     void OnTriggerExit2D(Collider2D collision)

@@ -7,7 +7,12 @@ public class mainmenu : MonoBehaviour
 {
     public void play()
     {
+
         SceneManager.LoadScene("22");
+        
+        
+
+
     }
 
     public void quit()
