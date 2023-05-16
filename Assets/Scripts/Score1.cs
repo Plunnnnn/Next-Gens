@@ -17,9 +17,9 @@ public class Score1 : MonoBehaviour
     void Start()
     { coinText.text = "x " + currentCoins.ToString(); }
 
-    public void IncreaseCoins()
+    public void IncreaseCoins(int queterec)
     { 
-        currentCoins += 1;
+        currentCoins += queterec;
         coinText.text = "x " + currentCoins.ToString();
     }
 }

@@ -19,7 +19,7 @@ public class Quest : MonoBehaviour
     public int quete2kill = 0;
     public int quete3kill = 0;
 
-    List<int> quetelist = new List<int>() { 0, 0, 0 };
+    
 
 
 
@@ -34,6 +34,8 @@ public class Quest : MonoBehaviour
     {
 
         txtquete1.SetActive(quete1);
+        txtquete2.SetActive(quete2);
+        txtquete3.SetActive(quete3);
 
 
 

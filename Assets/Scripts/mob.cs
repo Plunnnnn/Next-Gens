@@ -20,7 +20,7 @@ public class mob : MonoBehaviour
     public Player player;
 
 
-   
+    
 
     public Transform[] points;
     public int current;
@@ -34,6 +34,8 @@ public class mob : MonoBehaviour
   
 
     public TMP_Text quete1txt;
+    public TMP_Text quete2txt;
+    public TMP_Text quete3txt;
     void Start()
     
     
@@ -84,12 +86,31 @@ public class mob : MonoBehaviour
             
             Destroy(gameObject);
 
-            if (quest.quete1kill <= 5 ) ;
+            if (quest.quete1kill < 3  ) 
             {
 
-                quest.quete1kill += 1;
+               
+
+               quest.quete1kill += 1;
                 
-               quete1txt.text = "Quete 1 : tuer 5 zombies :" + quest.quete1kill.ToString() + "/5" ;
+               quete1txt.text = "Quete 1 : tuer 3 zombies :" + quest.quete1kill.ToString() + "/3" ;
+
+            }
+
+            else if (quest.quete1kill == 3 && quest.quete2kill < 3 ) 
+            {
+
+                quest.quete2kill += 1;
+
+                quete2txt.text = "Quete 1 : tuer 3 zombies :" + quest.quete2kill.ToString() + "/3";
+            }
+
+            else if (quest.quete1kill == 3 && quest.quete2kill == 3 && quest.quete3kill < 3) 
+            {
+
+                quest.quete3kill += 1;
+
+                quete3txt.text = "Quete 1 : tuer 3 zombies :" + quest.quete3kill.ToString() + "/3";
             }
         }
     

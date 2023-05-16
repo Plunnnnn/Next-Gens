@@ -9,7 +9,9 @@ public class Player : MonoBehaviour
 {
     public Death death;
     public Quest quest;
-
+    public Score1 score1;
+    public mob mob;
+    
     public Image BarreDeVie;
     public float HpRestant = 100f;
 
@@ -23,6 +25,7 @@ public class Player : MonoBehaviour
     public float attackrange = 0.5f;
     public LayerMask enemyLayer;
     public int Degats = 50;
+    public int queterec = 20;
     
     private Rigidbody2D rb;
     private BoxCollider2D jumpControler;
@@ -51,8 +54,10 @@ public class Player : MonoBehaviour
     public float KBTemps;
 
     public int quetecompte = 0;
-    
-    
+
+    public bool finishquete1 = false;
+    public bool finishquete2 = false;
+    public bool finishquete3 = false;
 
     // Start is called before the first frame update
 
@@ -89,10 +94,32 @@ public class Player : MonoBehaviour
             KB = 0.2f;
             
         }
-        if (collision.gameObject.tag == "pnj")
+        if (collision.gameObject.tag == "pnj" )
         {
-            
-            quest.quete1 = true;
+
+            if (quest.quete1kill == 0)
+            {
+                quest.quete1 = true;
+            }
+            else if (quest.quete1kill == 3 && finishquete1 == false)
+            {
+                quest.quete2 = true;
+                Score1.instance.IncreaseCoins(queterec);
+                finishquete1 = true;
+            }
+            else if (quest.quete2kill == 3 && finishquete2 == false)
+            {
+                quest.quete3 = true;
+                Score1.instance.IncreaseCoins(queterec);
+                finishquete2 = true;
+            }
+            else if (quest.quete3kill == 3 && finishquete3 == false)
+            {
+                quest.quete3 = true;
+                Score1.instance.IncreaseCoins(queterec);
+                finishquete3 = true;
+            }
+
         }
 
     }

@@ -26,7 +26,7 @@ public class Coin : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Score1.instance.IncreaseCoins();
+            Score1.instance.IncreaseCoins(1);
             Destroy(gameObject);
             
 
